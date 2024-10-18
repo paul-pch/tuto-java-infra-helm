@@ -23,7 +23,7 @@ ingress:
   enabled: true
   secret:
     enabled: true
-  host: test.pch.dso.numerique-interieur.com
+  host: pch.dso.numerique-interieur.com
 
 resources:
   limits:
