@@ -23,7 +23,7 @@ ingress:
   enabled: true
   secret:
     enabled: true
-  host: pch.dso.numerique-interieur.com
+  host: pch.apps.dso-formation.hp.numerique-interieur.com
 
 resources:
   limits:
