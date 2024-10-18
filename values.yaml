@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: harbor.apps.c6.numerique-interieur.com/mi-tuto/app-java-forge-dso-demo
+  repository: harbor.apps.dso.numerique-interieur.com/mi-formationnativepch/
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "master"
 
-imagePullSecrets: 
+imagePullSecrets:
   - name: "registry-pull-secret"
 nameOverride: ""
 fullnameOverride: ""
@@ -25,15 +25,15 @@ ingress:
     enabled: true
   host: plec-demo.dev.numerique-interieur.com
 
-resources: 
+resources:
   limits:
     memory: "512Mi"
-    cpu: "500m"  
+    cpu: "500m"
   requests:
     memory: "512Mi"
-    cpu: "100m"  
+    cpu: "100m"
 
-global: 
+global:
   postgresql:
     auth:
       postgresPassword: "MySupErPaSSwOrd"
@@ -58,7 +58,7 @@ postgresql:
   podSecurityContext:
     enabled: false
   primary:
-    resources: 
+    resources:
       limits:
         memory: "512Mi"
         cpu: "500m"
